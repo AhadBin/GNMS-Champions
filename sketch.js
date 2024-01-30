@@ -64,7 +64,7 @@ function signIn() {
 }
 
 function updateDatabase() {
-  var newData = inputUpdatePlace_stars.value();
+  var newData = database.ref(inputUpdatePlace_grade + "/"+ inputUpdatePlace_section + "/Students/" + inputUpdatePlace_name).value + inputUpdatePlace_stars.value;
   database.ref(inputUpdatePlace_grade + "/"+ inputUpdatePlace_section + "/Students/" + inputUpdatePlace_name).set(newData)
     .then(() => {
       console.log('Database updated');
