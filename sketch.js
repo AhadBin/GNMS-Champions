@@ -54,6 +54,7 @@ function signIn() {
       inputUpdatePlace_name.position(windowWidth/2 - 50, windowHeight/2 - 100);
       inputUpdatePlace_stars.position(windowWidth/2 - 50, windowHeight/2 - 75);
       buttonUpdate.position(windowWidth/2 - 50, windowHeight/2 - 50);
+      buttonUpdate.onPress(updateDatabase())
       inputPassword.position(-100, -100);
       inputEmail.position(-100, -100);
       buttonSignIn.position(-100, -100);
