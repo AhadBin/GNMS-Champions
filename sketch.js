@@ -70,7 +70,7 @@ function updateDatabase() {
       console.log('Database updated');
     })
     .catch((error) => {
-      console.error('Error:', error.message);
+      text(('Error:' + error.message), 20, 20);
     });
 }
 
